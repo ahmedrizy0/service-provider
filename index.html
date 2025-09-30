@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HomeService Provider</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="logo.png">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="logo-title">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkJ-oeERY8zrqYQqWiXU-iRHOOyrwF9FKNWg&s" alt="HomeService Pro Logo" class="logo">
+        <h1 class="title">HomeService Provider</h1>
+      </div>
+      <nav>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#how-it-works" class="nav-link">How It Works</a>
+        <a href="#providers" class="nav-link">Providers</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="signin.html" class="btn-signin">Sign In</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container text-center">
+      <h2>Find Trusted Home Service Professionals</h2>
+      <p>Connect with verified plumbers, electricians, carpenters, and more. Quality service guaranteed.</p>
+      <div class="cta-buttons">
+        <a href="signin.html" class="btn btn-book">Book a Service</a>
+        <a href="signin.html" class="btn btn-provider">Become a Provider</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="services">
+    <div class="container text-center">
+      <h2>Our Services</h2>
+      <div class="row">
+        <!-- Plumbing -->
+        <div class="col-md-4">
+          <div class="card card-plumbing">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZgxBL44K0SAahKIrJD32ZWBhEASwbgi8HxQ&s" alt="Plumbing">
+            <div class="icon"><i class="fas fa-faucet"></i></div>
+            <h3 class="text-plumbing">Plumbing</h3>
+            <p>Fix leaks, install fixtures, and more.</p>
+            <a href="plumbing.html" class="btn btn-custom-1">Book Now</a>
+          </div>
+        </div>
+        <!-- Electrical -->
+        <div class="col-md-4">
+          <div class="card card-electrical">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrpP6ydNh_rhGajKzg37QWSRVk4RIazW8CSQ&s" alt="Electrical">
+            <div class="icon"><i class="fas fa-bolt"></i></div>
+            <h3 class="text-electrical">Electrical</h3>
+            <p>Certified electricians for all your needs.</p>
+            <a href="electrical.html" class="btn btn-custom-2">Book Now</a>
+          </div>
+        </div>
+        <!-- Carpentry -->
+        <div class="col-md-4">
+          <div class="card card-carpentry">
+            <img src="data:image/jpeg;base64,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" alt="Carpentry">
+            <div class="icon"><i class="fas fa-hammer"></i></div>
+            <h3 class="text-carpentry">Carpentry</h3>
+            <p>Skilled carpenters for repairs and projects.</p>
+            <a href="carpentry.html" class="btn btn-custom-3">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section id="how-it-works" class="steps">
+    <div class="container text-center">
+      <h2>How It Works</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="step-circle">1</div>
+          <h3>Choose Service</h3>
+          <p>Pick plumbing, electrical, or carpentry.</p>
+        </div>
+        <div class="col-md-4">
+          <div class="step-circle">2</div>
+          <h3>Find Provider</h3>
+          <p>See nearby pros with ratings.</p>
+        </div>
+        <div class="col-md-4">
+          <div class="step-circle">3</div>
+          <h3>Book & Relax</h3>
+          <p>Confirm booking, get instant confirmation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Providers -->
+  <section id="providers" class="providers">
+    <div class="container text-center">
+      <h2>Featured Providers</h2>
+      <p>Coming soon—our top-rated professionals.</p>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="about">
+    <div class="container text-center">
+      <h2>About Us</h2>
+      <p>We connect homeowners with trusted professionals for reliable, hassle-free home services.</p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <div class="container text-center">
+      <h2>Contact Us</h2>
+      <form id="contact-form" class="contact-form">
+        <input type="text" placeholder="Name" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Message" required></textarea>
+        <button type="submit" class="btn-send">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h3>Quick Links</h3>
+          <a href="#services">Services</a>
+          <a href="#how-it-works">How It Works</a>
+          <a href="#providers">Providers</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="col-md-4">
+          <h3>Testimonial</h3>
+          <p>HomeService Pro makes home repairs simple and reliable.</p>
+        </div>
+        <div class="col-md-3">
+          <h3>Contact</h3>
+          <p><i class="fas fa-map-marker-alt"></i> Assam, India</p>
+          <p><i class="fas fa-phone"></i> +91 XXXXX XXXXX</p>
+          <p><i class="fas fa-envelope"></i> contact@homeservice.in</p>
+        </div>
+        <div class="col-md-2">
+          <h3>Follow Us</h3>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+      <div class="copyright">&copy; 2025 HomeService Pro</div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
